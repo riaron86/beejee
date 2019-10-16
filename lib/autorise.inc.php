@@ -41,9 +41,9 @@ class autorise{
         $this->server = filter_input(INPUT_SERVER, 'REMOTE_ADDR');
         $this->usrdate = date("Y.m.d H:i:s");
      $this->mysqlihost = 'localhost';
-        $this->mysqliusr = 'root';
-        $this->mysqlipwd = '';
-        $this->mysqlidb = 'project';
+        $this->mysqliusr = 'f0344877_project';
+        $this->mysqlipwd = 'password';
+        $this->mysqlidb = 'f0344877_project';
         $this->err = array();
         $this->submit = filter_input(INPUT_POST, 'submit');
         $this->exxit = filter_input(INPUT_POST, 'exxit');
@@ -73,24 +73,24 @@ class autorise{
                    }
 			}elseif($uemail){
 				if(!$emnp){
-                    setcookie("sort", "ulg", time()+60 * 60 * 24 * 30);
+                    setcookie("sort", "uemail", time()+60 * 60 * 24 * 30);
                        setcookie("emnp", "ASC", time()+60 * 60 * 24 * 30);
                    }elseif($emnp=='ASC'){
-                    setcookie("sort", "ulg", time()+60 * 60 * 24 * 30);
+                    setcookie("sort", "uemail", time()+60 * 60 * 24 * 30);
                        setcookie("emnp", "DESC", time()+60 * 60 * 24 * 30);
                    }elseif($emnp=='DESC'){
-                    setcookie("sort", "ulg", time()+60 * 60 * 24 * 30);
+                    setcookie("sort", "uemail", time()+60 * 60 * 24 * 30);
                        setcookie("emnp", "ASC", time()+60 * 60 * 24 * 30);
                    }
 			}elseif($statuch){
 				if(!$stnp){
-                    setcookie("sort", "ulg", time()+60 * 60 * 24 * 30);
+                    setcookie("sort", "statuch", time()+60 * 60 * 24 * 30);
                        setcookie("stnp", "ASC", time()+60 * 60 * 24 * 30);
                    }elseif($stnp=='ASC'){
-                    setcookie("sort", "ulg", time()+60 * 60 * 24 * 30);
+                    setcookie("sort", "statuch", time()+60 * 60 * 24 * 30);
                        setcookie("stnp", "DESC", time()+60 * 60 * 24 * 30);
                    }elseif($stnp=='DESC'){
-                    setcookie("sort", "ulg", time()+60 * 60 * 24 * 30);
+                    setcookie("sort", "statuch", time()+60 * 60 * 24 * 30);
                        setcookie("stnp", "ASC", time()+60 * 60 * 24 * 30);
                    }
 			}
