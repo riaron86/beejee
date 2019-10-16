@@ -1,0 +1,87 @@
+/*body{
+background-color: black;}
+a,td,h4,div.my,p 	{color:white;}*/
+div.mm{
+    margin-left:1%;
+    margin-bottom: 1%;
+}
+
+a.atba:hover {
+cursor: pointer;
+}
+div.message{
+	width:70%;
+	height:265px;
+    border: 1px solid black;
+		border-radius:5px;
+}
+form.srt{
+	margin-left:35%;
+}
+div.ab{
+	height:240px;
+    float:left;
+    display :inline-block;
+}
+div.bc{
+    border:1px solid black;
+	width:220px;
+}
+
+div.hramka{
+	width:100%;
+	height:25px;
+	background-image:linear-gradient(to top, #fefcea, #f1da36);
+}
+
+div.contacts {
+    margin-top: 20px;
+    margin-left: 65px;
+}
+div.contacts > a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight:bold ;
+}
+div.comm{
+    margin-top:70px !important;
+    font-size: 37px;
+}
+div.header{
+    width:100%;
+    float:left;
+    background-color: white;
+}div.footer{
+    width:100%;
+    height: 200px;
+    float:left;
+    background-color: white;
+    border-bottom: 1px dotted black;
+}
+div.nnn{
+    width:50%;
+}
+
+div.logo{
+    margin-left: 70%;
+}
+div.container{
+    background-color: lightgray;
+}
+
+form > input{
+    border-radius: 5px;
+    border: 2px solid black;
+}form > textarea{
+    border-radius: 5px;
+    border: 2px solid black;
+}
+img.chimage{
+    height: 120px;
+    width: 150px;
+    margin:1%;
+}
+a.some{
+    margin-top: 1%;
+    margin-left: 1%;
+}
