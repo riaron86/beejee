@@ -53,7 +53,7 @@ class autorise{
         $this->ipassword = filter_input(INPUT_POST, 'password');
 		///////////////////////////////////////////////////
         $statuch = filter_input(INPUT_POST, 'statuch');
-        $uemail = filter_input(INPUT_POST, 'гemailch');
+        $uemail = filter_input(INPUT_POST, 'uemailch');
         $ulg = filter_input(INPUT_POST, 'ulgch');
 		$stnp = filter_input( INPUT_COOKIE, 'stnp');
 		$lgnp = filter_input( INPUT_COOKIE, 'lgnp');
