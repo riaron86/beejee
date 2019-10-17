@@ -59,7 +59,9 @@ class autorise{
 		$lgnp = filter_input( INPUT_COOKIE, 'lgnp');
 		$emnp = filter_input( INPUT_COOKIE, 'emnp');
         $sort = filter_input( INPUT_COOKIE, 'sort');
-       
+       if(!$lgnp){$lgnp='ASC';}
+       if(!$emnp){$emnp='ASC';}
+       if(!$stnp){$stnp='ASC';}
 			if(isset($ulg)){
 				if($lgnp=='ASC'){
                     setcookie("sort", "ulg", time()+60 * 60 * 24 * 30);
