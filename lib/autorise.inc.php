@@ -61,10 +61,7 @@ class autorise{
         $sort = filter_input( INPUT_COOKIE, 'sort');
        
 			if(isset($ulg)){
-				if(!$lgnp){
-                    setcookie("sort", "ulg", time()+60 * 60 * 24 * 30);
-                       setcookie("lgnp", "ASC", time()+60 * 60 * 24 * 30);
-                   }elseif($lgnp=='ASC'){
+				if($lgnp=='ASC'){
                     setcookie("sort", "ulg", time()+60 * 60 * 24 * 30);
                        setcookie("lgnp", "DESC", time()+60 * 60 * 24 * 30);
                    }elseif($lgnp=='DESC'){
@@ -72,10 +69,7 @@ class autorise{
                        setcookie("lgnp", "ASC", time()+60 * 60 * 24 * 30);
                    }
 			}elseif($uemail){
-				if(!$emnp){
-                    setcookie("sort", "uemail", time()+60 * 60 * 24 * 30);
-                       setcookie("emnp", "ASC", time()+60 * 60 * 24 * 30);
-                   }elseif($emnp=='ASC'){
+				if($emnp=='ASC'){
                     setcookie("sort", "uemail", time()+60 * 60 * 24 * 30);
                        setcookie("emnp", "DESC", time()+60 * 60 * 24 * 30);
                    }elseif($emnp=='DESC'){
@@ -83,10 +77,7 @@ class autorise{
                        setcookie("emnp", "ASC", time()+60 * 60 * 24 * 30);
                    }
 			}elseif($statuch){
-				if(!$stnp){
-                    setcookie("sort", "statuch", time()+60 * 60 * 24 * 30);
-                       setcookie("stnp", "ASC", time()+60 * 60 * 24 * 30);
-                   }elseif($stnp=='ASC'){
+				if($stnp=='ASC'){
                     setcookie("sort", "statuch", time()+60 * 60 * 24 * 30);
                        setcookie("stnp", "DESC", time()+60 * 60 * 24 * 30);
                    }elseif($stnp=='DESC'){
